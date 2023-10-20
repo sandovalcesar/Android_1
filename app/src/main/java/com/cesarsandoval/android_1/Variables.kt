@@ -3,21 +3,40 @@ package com.cesarsandoval.android_1
 //VARIABLES
 val age1: Int = 42
 var age2 = 30
+
 fun main() {
-variableNumerica()
+    showMyName("cesar")
+    showMyAge(42)
+    add(5, 7)
+    val mySubtrack = subtrack(10, 5)
+    println(mySubtrack)
 
 }
 
-fun variableNumerica(){
+fun showMyName(name:String) {
+    println("Me llamo $name")
+}
+
+fun showMyAge(currentAge: Int) {
+    println("Tengo $currentAge años")
+}
+
+fun add(firstNumber: Int, secondNumber: Int) {
+    println(firstNumber + secondNumber)
+}
+fun subtrack(firstNumber: Int, secondNumber: Int):Int {
+    return (firstNumber - secondNumber)
+}
+fun variableNumerica() {
     //Int
 
     var age2 = 30
 
     //Long
-    val example:Long = 33554411122122587
+    val example: Long = 33554411122122587
 
     //Float
-    val floatExample:Float = 30.5f
+    val floatExample: Float = 30.5f
 
     //Double
     val doubleExample: Double = 3216.123456
@@ -38,14 +57,14 @@ fun variableNumerica(){
     println(age1 % age2)
 }
 
-fun variableBoolena (){
+fun variableBoolena() {
     //Boolean
     val booleanExample1: Boolean = true
     val booleanExample2: Boolean = false
 
 }
 
-fun variableAlfanumerica(){
+fun variableAlfanumerica() {
     //Char
     val charExaple1: Char = 'C'
     val charExaple2: Char = 'e'
